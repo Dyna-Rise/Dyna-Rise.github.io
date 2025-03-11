@@ -4,47 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/ress.css">
+    <title>Your Title</title>
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- My css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>My Portfolios</h1>
-    </header>
-    <main>
-        <section class="works">
-            <h2>Portfolios</h2>
+    <header id="header">
+        <nav class="mainNav">
             <ul>
-                <li><a href="work1/index.html"><img src="" alt="作品1"></a>
-                    <p>作品概要</p>
-                </li>
-                <li><a href="work2/index.html"><img src="" alt="作品2"></a>
-                    <p>作品概要</p>
-                </li>
-                <li><a href="work3/index.html"><img src="" alt="作品3"></a>
-                    <p>作品概要</p>
-                </li>
-                <li><a href="work4/index.html"><img src="" alt="作品4"></a>
-                    <p>作品概要</p>
-                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skillSet">Skill set</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section class="profile">
-            <h2>My Profile</h2>
-        </section>
-        <section class="history">
-            <h2>History</h2>
-        </section>
-        <section class="contact">
-            <h2>My Contact</h2>
-        </section>
-    </main>
-    <footer>
-        <div class="copyRight">
-            <p>&copy; Dynarise 2025</p>
+        </nav>
+        <div class="topView">
+            <div class="logo">
+                <h1>yourName's Site</h1>
+                <p>エンジニアスキルのポートフォリオサイト</p>
+                <div class="icon"><img src="images/note_pc_w.png" alt="ノートパソコンの絵"></div>
+                <a href="#works" class="toWorksButton">Works</a>
+            </div>
         </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="wrapper about_inner">
+                <div>
+                    <h2>About this site</h2>
+                    <p>
+                        このサイトはYour Nameのポートフォリオサイトでエンジニアスキルの一部を披露します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="wrapper works_inner">
+                <h2>Works</h2>
+                <p>
+                    エンジニアを目指す中で制作した作品や学習内容の一部を紹介します。<br>
+                    Unityで作ったゲーム作品やWebサイトを掲載しています。
+                </p>
+
+                <div class="worksGrid">
+                    <div class="gridItem">
+                        <a class="gridBox" href="work1/index.html" target="_blank">
+                            <img src="images/sample.jpg" alt="my works">
+                            <p>message</p>
+                        </a>
+                    </div>
+                    <div class="gridItem">
+                        <a class="gridBox" href="">
+                            <img src="images/sample.jpg" alt="my works">
+                            <p>message</p>
+                        </a>
+                    </div>
+                    <div class="gridItem">
+                        <a class="gridBox" href="">
+                            <img src="images/sample.jpg" alt="my works">
+                            <p>message</p>
+                        </a>
+                    </div>
+                    <div class="gridItem">
+                        <a class="gridBox" href="">
+                            <img src="images/sample.jpg" alt="my works">
+                            <p>message</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skillSet">
+            <div class="wrapper skillSet_inner">
+                <h2>My skill set</h2>
+                <p>
+                    メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ
+                </p>
+                <ul class="skillFlex">
+                    <li>
+                        <span>HTML/CSS</span>
+                        <div class="parentBar">
+                            <div class="childBar" style="width:65%;"></div>
+                        </div>
+                        <p>(65%)HTML/CSSの基礎、レスポンシブデザインをはじめ、flexやgridの技術を習得しました。positionによる重ね合わせの技術も習得、疑似クラスの一部も学習しています。</p>
+                    </li>
+                    <li>
+                        <span>C#</span>
+                        <div class="parentBar">
+                            <div class="childBar" style="width:60%;"></div>
+                        </div>
+                        <p>(60%)オブジェクト指向の基礎を用いたクラス設計、継承などの習得をしました。コンソールアプリでいくつかのアプリを実際に作成しています。</p>
+                    </li>
+                    <li>
+                        <span>Unity</span>
+                        <div class="parentBar">
+                            <div class="childBar" style="width:80%;"></div>
+                        </div>
+                        <p>(80%)2D・3Dゲームの作成、コルーチンの習得、プレハブを利用した効率的な制作を行ってきました。いくつかのオリジナル作品を通して様々なデバッグにも強くなりました。</p>
+                    </li>
+                </ul>
+                <p class="supplement">
+                    今後の展望に関するメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ
+                </p>
+            </div>
+        </section>
+
+        <section id="profile">
+            <div class="wrapper profile_inner">
+                <h2>Profile(About me)</h2>
+                <p>
+                    メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ
+                </p>
+                <ul class="toSNS">
+                    <li><a href="">x</a></li>
+                    <li><a href="">instagram</a></li>
+                    <li><a href="">tiktok</a></li>
+                </ul>
+                <h3>My Job History</h3>
+                <ul class="jobHistory">
+                    <li>
+                        <div class="jobTitle">JobTitle<span class="jobDate">2000～2000</span></div>
+                        <p class="jobInfo">
+                            メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ
+                        </p>
+                    </li>
+                    <li>
+                        <div class="jobTitle">JobTitle<span class="jobDate">2000～2000</span>
+                        </div>
+                        <p class="jobInfo">
+                            メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper contact_inner">
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Tell:090719187</li>
+                        <li>email:kunren3430@gmail.com</li>
+                    </ul>
+                    <a href="mailto:kunren3430@gmail.com" class="sendMail">
+                        Send Mail
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div>
+            <div class="footerTop">
+                <p>Thank you for coming!</p>
+            </div>
+            <div class="footerBottom">
+                <p class="copyright">&copy;your portfolio name (since)</p>
+            </div>
+        </div>
+
     </footer>
 </body>
 
